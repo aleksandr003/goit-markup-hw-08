@@ -2,14 +2,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
+    text-align: center;
 }
-
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
 
 // address
 
@@ -43,31 +37,93 @@
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: start;
+    text-align: center;
 
     color: var(--primary-white-color);
 }
 
-.footer-flex svg {
+.footer__join {
+    margin: 60px 0;
+}
+
+.footer__join svg {
     fill: var(--primary-white-color);
 }
 
-// form
-.form {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
 
 .form__input {
+    margin-bottom: 20px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     
-    width: 358px;
+    width: 100%;
     font-size: 16px;
 
     color: var(--primary-white-color);
     background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .form__input {
+        display: block;
+        max-width: 450px;
+        margin: 0 auto 20px auto;
+    }
+
+    .footer__join {
+        margin: 65px 0 102px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.02px) {
+    .footer__info,
+    .footer__join {
+        width: 50%;
+        margin-top: 0;
+    }
+    .form-block {
+        width: 100%;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .footer {
+        text-align: start;
+    }
+    
+    .footer-title {
+        text-align: start;
+    }
+
+    .footer__join {
+        margin: 0;
+    }
+
+    .form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form__input {
+        margin: 0;
+        width: 358px;
+    }
+
+    .form__button {
+        margin-left: 12px;
+    }
 }

@@ -1,3 +1,7 @@
+.work-section {
+    display: none;
+}
+
 .work__item:not(:last-child) {
     margin-right: 30px;
 }
@@ -19,4 +23,10 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
     background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (min-width: 1200px) {
+    .work-section {
+        display: block;
+    }
 }
