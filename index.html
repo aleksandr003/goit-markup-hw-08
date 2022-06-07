@@ -30,6 +30,23 @@
               <a class="nav__link link" href="#">Контакты</a>
             </li>
           </ul>
+
+          <button class="mabil-menu__btn" data-menu-button>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного окна"
+            >
+              <use
+                class="icon-menu-close"
+                href="./images/sprite.svg#icon-menu-close"
+              ></use>
+              <use
+                class="icon-menu-open"
+                href="./images/sprite.svg#icon-menu-open"
+              ></use>
+            </svg>
+          </button>
         </nav>
         <ul class="contacts-list list">
           <li class="contacts-list__item">
@@ -547,6 +564,50 @@
       </div>
     </div>
 
+    <!-- Модельное окно -->
+    <div class="mabil-menu">
+      <ul class="mabil-menu__nuv">
+        <li class="mabil-menu__nuv-list">
+          <a class="mabil-menu__nuv-link" href="">Студия</a>
+        </li>
+        <li class="mabil-menu__nuv-list">
+          <a class="mabil-menu__nuv-link" href="">Портфолио</a>
+        </li>
+        <li class="mabil-menu__nuv-list">
+          <a class="mabil-menu__nuv-link" href="">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="mabil-menu__cont">
+        <li class="mabil-menu__cont--list">
+          <a href="tel:+380961111111" class="mabil-menu__cont-link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mabil-menu__cont--list">
+          <a href="mailto:info@devstudio.com" class="mabil-menu__cont-link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mabil-menu__socials">
+        <li class="mabil-menu__socials-item">
+          <a href="" class="mabil-menu__socials-link">Instagram</a>
+        </li>
+        <li class="mabil-menu__socials-item">
+          <a href="" class="mabil-menu__socials-link">Twitter</a>
+        </li>
+        <li class="mabil-menu__socials-item">
+          <a href="" class="mabil-menu__socials-link">Facebook</a>
+        </li>
+        <li class="mabil-menu__socials-item">
+          <a href="" class="mabil-menu__socials-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

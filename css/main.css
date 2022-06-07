@@ -458,6 +458,27 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mabil-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.mabil-menu__btn .icon-menu-close {
+  display: none;
+}
+
+.mabil-menu__btn.is-open .icon-menu-close {
+  display: block;
+}
+
+.mabil-menu__btn.is-open .icon-menu-open {
+  display: none;
+}
+
 .social {
   display: flex;
   list-style: none;
@@ -505,6 +526,7 @@ img {
 }
 
 .container {
+  position: relative;
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
