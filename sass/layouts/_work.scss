@@ -1,0 +1,22 @@
+.work__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work__item {
+    position: relative;
+}
+
+.work__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 27px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.142;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
