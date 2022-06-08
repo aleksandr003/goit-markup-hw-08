@@ -75,3 +75,9 @@ img {
 .accent {
     color: var(--accant-color);
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

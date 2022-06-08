@@ -15,73 +15,92 @@
     <!--Шапка сайта-->
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a href="./index.html" class="logo"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <ul class="nav-list list">
-            <li class="nav__item">
-              <a class="nav__link link current" href="./index.html">Студия</a>
+        <a href="./index.html" class="logo"
+          ><span class="accent">Web</span>Studio</a
+        >
+        <div class="header__menu" data-menu>
+          <nav class="nav">
+            <ul class="nav-list list">
+              <li class="nav__item">
+                <a class="nav__link link current" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-list list">
+            <li class="contacts-list__item">
+              <a
+                class="contacts-list__link contacts-list__link--mail link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="contacts-list__icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Контакты</a>
+            <li class="contacts-list__item">
+              <a
+                class="contacts-list__link contacts-list__link--tel link"
+                href="tel:+380961111111"
+              >
+                <svg class="contacts-list__icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
+          <ul class="header__sicials list">
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">Instagram</a>
+            </li>
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">Twitter</a>
+            </li>
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">Facebook</a>
+            </li>
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
 
-          <button class="mabil-menu__btn" data-menu-button>
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного окна"
-            >
-              <use
-                class="icon-menu-close"
-                href="./images/sprite.svg#icon-menu-close"
-              ></use>
-              <use
-                class="icon-menu-open"
-                href="./images/sprite.svg#icon-menu-open"
-              ></use>
-            </svg>
-          </button>
-        </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a
-              class="contacts-list__link link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="contacts-list__icon" width="16" height="16">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link link" href="tel:+380961111111">
-              <svg class="contacts-list__icon" width="16" height="16">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <button class="mabil-menu__btn" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного окна"
+          >
+            <use
+              class="icon-menu-close"
+              href="./images/sprite.svg#icon-menu-close"
+            ></use>
+            <use
+              class="icon-menu-open"
+              href="./images/sprite.svg#icon-menu-open"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!--hero-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--Преимущества-->
       <section class="section section-features">
@@ -562,49 +581,6 @@
           </svg>
         </button>
       </div>
-    </div>
-
-    <!-- Модельное окно -->
-    <div class="mabil-menu">
-      <ul class="mabil-menu__nuv">
-        <li class="mabil-menu__nuv-list">
-          <a class="mabil-menu__nuv-link" href="">Студия</a>
-        </li>
-        <li class="mabil-menu__nuv-list">
-          <a class="mabil-menu__nuv-link" href="">Портфолио</a>
-        </li>
-        <li class="mabil-menu__nuv-list">
-          <a class="mabil-menu__nuv-link" href="">Контакты</a>
-        </li>
-      </ul>
-
-      <ul class="mabil-menu__cont">
-        <li class="mabil-menu__cont--list">
-          <a href="tel:+380961111111" class="mabil-menu__cont-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-        <li class="mabil-menu__cont--list">
-          <a href="mailto:info@devstudio.com" class="mabil-menu__cont-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mabil-menu__socials">
-        <li class="mabil-menu__socials-item">
-          <a href="" class="mabil-menu__socials-link">Instagram</a>
-        </li>
-        <li class="mabil-menu__socials-item">
-          <a href="" class="mabil-menu__socials-link">Twitter</a>
-        </li>
-        <li class="mabil-menu__socials-item">
-          <a href="" class="mabil-menu__socials-link">Facebook</a>
-        </li>
-        <li class="mabil-menu__socials-item">
-          <a href="" class="mabil-menu__socials-link">LinkedIn</a>
-        </li>
-      </ul>
     </div>
 
     <script src="./js/menu.js"></script>
