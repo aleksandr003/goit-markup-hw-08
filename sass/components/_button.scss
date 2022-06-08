@@ -98,11 +98,16 @@
 .mabil-menu__btn {
     position: fixed;
     top: 10px;
-    right: 15px;
+    right: 0;
     cursor: pointer;
     border: none;
     background: transparent;
     z-index: 2;
+
+    &:hover svg,
+    &:focus svg {
+        fill: var(--accant-color);
+    }
 
     @media screen and (min-width: 768px) {
         display: none;

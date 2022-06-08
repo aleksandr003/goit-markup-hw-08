@@ -49,7 +49,11 @@
                 class="contacts-list__link contacts-list__link--tel link"
                 href="tel:+380961111111"
               >
-                <svg class="contacts-list__icon" width="16" height="16">
+                <svg
+                  class="contacts-list__icon contacts-list__icon-tel"
+                  width="16"
+                  height="16"
+                >
                   <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -145,31 +149,51 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work list flexing">
             <li class="work__item">
-              <img
-                src="./images/place1.jpg"
-                alt="мужчина печатает на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/place11.jpg 1x, ./images/place11@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="work__item"
+                  src="./images/place11.jpg"
+                  alt="мужчина клацает на клавиатуре"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="work__title">Десктопные приложения</h3>
             </li>
             <li class="work__item">
-              <img
-                src="./images/place2.jpg"
-                alt="девушка клацает смартфон и
-          ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/place22.jpg 1x, ./images/place22@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="work__item"
+                  src="./images/place22.jpg"
+                  alt="девушка держит в руке смартфон"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="work__title">Мобильные приложения</h3>
             </li>
             <li class="work__item">
-              <img
-                src="./images/place3.jpg"
-                alt="девушка держит планшет в руках"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/place33.jpg 1x, ./images/place33@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="work__item"
+                  src="./images/place33.jpg"
+                  alt="держит в руке планшет"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="work__title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -182,13 +206,42 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/teacher1.jpg"
-                alt="учитель мужчина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/t-teachr-desk.jpg    1x,
+                    ./images/t-teachr-desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/t-teachr-tab.jpg    1x,
+                    ./images/t-teachr-tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/t-teachr-mob.jpg    1x,
+                    ./images/t-teachr-mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/t-teachr-mob.jpg"
+                  alt="учитель мужчина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="participant">
                 <h3 class="participant__title title">Игорь Демьяненко</h3>
                 <p class="participant__text">Product Designer</p>
@@ -225,13 +278,42 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/teacher2.jpg"
-                alt="учитель женщина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/t-teachr2-desk.jpg    1x,
+                    ./images/t-teachr2-desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/t-teachr2-tab.jpg    1x,
+                    ./images/t-teachr2-tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/t-teachr2-mob.jpg    1x,
+                    ./images/t-teachr2-mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/t-teachr2-mob.jpg"
+                  alt="учитель мужчина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="participant">
                 <h3 class="participant__title title">Ольга Репина</h3>
                 <p class="participant__text">Frontend Developer</p>
@@ -268,13 +350,41 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/teacher3.jpg"
-                alt="учитель мужчина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/t-teachr3-desk.jpg    1x,
+                    ./images/t-teachr3-desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/t-teachr3-tab.jpg    1x,
+                    ./images/t-teachr3-tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/t-teachr3-mob.jpg    1x,
+                    ./images/t-teachr3-mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/t-teachr3-mob.jpg"
+                  alt="учитель мужчина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="participant">
                 <h3 class="participant__title title">Николай Тарасов</h3>
                 <p class="participant__text">Marketing</p>
@@ -311,13 +421,41 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/teacher4.jpg"
-                alt="учитель мужчина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/t-teachr4-desk.jpg    1x,
+                    ./images/t-teachr4-desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/t-teachr4-tab.jpg    1x,
+                    ./images/t-teachr4-tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/t-teachr4-mob.jpg    1x,
+                    ./images/t-teachr4-mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/t-teachr4-mob.jpg"
+                  alt="учитель мужчина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="participant">
                 <h3 class="participant__title title">Михаил Ермаков</h3>
                 <p class="participant__text">UI Designer</p>

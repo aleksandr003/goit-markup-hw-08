@@ -15,45 +15,81 @@
     <!--Шапка сайта-->
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a href="./index.html" class="logo"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <ul class="nav-list list">
-            <li class="nav__item">
-              <a class="nav__link link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link current" href="./portfolio.html"
-                >Портфолио</a
+        <a href="./index.html" class="logo"
+          ><span class="accent">Web</span>Studio</a
+        >
+        <div class="header__menu" data-menu>
+          <nav class="nav">
+            <ul class="nav-list list">
+              <li class="nav__item">
+                <a class="nav__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-list list">
+            <li class="contacts-list__item">
+              <a
+                class="contacts-list__link contacts-list__link--mail link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="contacts-list__icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Контакты</a>
+            <li class="contacts-list__item">
+              <a
+                class="contacts-list__link contacts-list__link--tel link"
+                href="tel:+380961111111"
+              >
+                <svg class="contacts-list__icon" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a
-              class="contacts-list__link link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="contacts-list__icon" width="16" height="16">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link link" href="tel:+380961111111">
-              <svg class="contacts-list__icon" width="16" height="16">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="header__sicials list">
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">Instagram</a>
+            </li>
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">Twitter</a>
+            </li>
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">Facebook</a>
+            </li>
+            <li class="header__sicials-item">
+              <a href="" class="header-socials-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="mabil-menu__btn" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного окна"
+          >
+            <use
+              class="icon-menu-close"
+              href="./images/sprite.svg#icon-menu-close"
+            ></use>
+            <use
+              class="icon-menu-open"
+              href="./images/sprite.svg#icon-menu-open"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -102,12 +138,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="#">
                 <div class="slider">
-                  <img
-                    src="./images/service1.jpg"
-                    alt="монитор ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service1-desk.jpg    1x,
+                        ./images/portfolio/service1-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service1-tab.jpg    1x,
+                        ./images/portfolio/service1-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service1-mob.jpg    1x,
+                        ./images/portfolio/service1-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service1-mob.jpg"
+                      alt="монитор ноутбука"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -123,12 +188,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="#">
                 <div class="slider">
-                  <img
-                    src="./images/service2.jpg"
-                    alt="два парня играют в баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service2-desk.jpg    1x,
+                        ./images/portfolio/service2-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service2-tab.jpg    1x,
+                        ./images/portfolio/service2-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service2-mob.jpg    1x,
+                        ./images/portfolio/service2-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service2-mob.jpg"
+                      alt="два парня играют в баскетбол"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -146,12 +240,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="#">
                 <div class="slider">
-                  <img
-                    src="./images/service3.jpg"
-                    alt="логотип в виде рыбы"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service3-desk.jpg    1x,
+                        ./images/portfolio/service3-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service3-tab.jpg    1x,
+                        ./images/portfolio/service3-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service3-mob.jpg    1x,
+                        ./images/portfolio/service3-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service3-mob.jpg"
+                      alt="логотип в виде рыбы"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -167,12 +290,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="#">
                 <div class="slider">
-                  <img
-                    src="./images/service4.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service4-desk.jpg    1x,
+                        ./images/portfolio/service4-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service4-tab.jpg    1x,
+                        ./images/portfolio/service4-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service4-mob.jpg    1x,
+                        ./images/portfolio/service4-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service4-mob.jpg"
+                      alt="наушники"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -188,12 +340,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="slider">
-                  <img
-                    src="./images/service5.jpg"
-                    alt="два бокса"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service5-desk.jpg    1x,
+                        ./images/portfolio/service5-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service5-tab.jpg    1x,
+                        ./images/portfolio/service5-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service5-mob.jpg    1x,
+                        ./images/portfolio/service5-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service5-mob.jpg"
+                      alt="два бокса"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -209,12 +390,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="#">
                 <div class="slider">
-                  <img
-                    src="./images/service6.jpg"
-                    alt="монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service6-desk.jpg    1x,
+                        ./images/portfolio/service6-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service6-tab.jpg    1x,
+                        ./images/portfolio/service6-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service6-mob.jpg    1x,
+                        ./images/portfolio/service6-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service6-mob.jpg"
+                      alt="монитор"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -232,12 +442,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="slider">
-                  <img
-                    src="./images/service7.jpg"
-                    alt="открытая книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service7-desk.jpg    1x,
+                        ./images/portfolio/service7-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service7-tab.jpg    1x,
+                        ./images/portfolio/service7-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service7-mob.jpg    1x,
+                        ./images/portfolio/service7-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service7-mob.jpg"
+                      alt="открытая книга"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -253,12 +492,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="slider">
-                  <img
-                    src="./images/service8.jpg"
-                    alt="бейджик на верёвке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service8-desk.jpg    1x,
+                        ./images/portfolio/service8-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service8-tab.jpg    1x,
+                        ./images/portfolio/service8-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service8-mob.jpg    1x,
+                        ./images/portfolio/service8-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service8-mob.jpg"
+                      alt="бейджик на верёвке"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -274,10 +542,41 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="slider">
-                  <img
-                    src="./images/service9.jpg"
-                    alt="парень печатает на ноутбуке"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/service9-desk.jpg    1x,
+                        ./images/portfolio/service9-desk@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/service9-tab.jpg    1x,
+                        ./images/portfolio/service9-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/service9-mob.jpg    1x,
+                        ./images/portfolio/service9-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/service9-mob.jpg"
+                      alt="парень печатает на ноутбуке"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="slider__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -399,5 +698,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

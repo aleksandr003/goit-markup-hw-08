@@ -9,6 +9,8 @@
 
     background-color: var(--primary-white-color);
 
+
+
     
     @media screen and (min-width: 768px) {
         width: calc((100% - 4 * 15px) / 2);
@@ -20,6 +22,10 @@
         width: calc((100% - 8 * 15px) / 4);
     }
 }
+
+// .team__img {
+//     width: 100%;
+// }
 
 // .team__item:not(:last-child) {
 //     margin-right: 30px;

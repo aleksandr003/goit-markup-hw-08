@@ -31,9 +31,9 @@
     background-image: url("../images/astronaut.svg");
 }
 
-.section-features {
-    padding-bottom: 0;
-}
+// .section-features {
+//     padding-bottom: 0;
+// }
 
 // .features__item {
 //     max-width: 450px;
@@ -57,6 +57,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
     .features {
         display: flex;
         flex-wrap: wrap;
@@ -84,6 +85,10 @@
 
 
 @media screen and (min-width: 1200px) {
+    .section-features {
+        padding-bottom: 0;
+    }
+
     .features__item {
      width: 270px;
     }
