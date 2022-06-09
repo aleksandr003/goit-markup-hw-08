@@ -465,7 +465,7 @@ img {
 }
 
 .mabil-menu__btn {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 0;
   cursor: pointer;
@@ -474,7 +474,6 @@ img {
   z-index: 2;
 }
 
-.mabil-menu__btn:hover svg,
 .mabil-menu__btn:focus svg {
   fill: var(--accant-color);
 }
