@@ -104,7 +104,7 @@
     background: transparent;
     z-index: 2;
 
-    
+    &:hover svg,
     &:focus svg {
         fill: var(--accant-color);
     }
