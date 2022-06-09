@@ -1,8 +1,8 @@
 .hero {
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../images/hero-mob.jpg");
+    // background-image: linear-gradient(to right,
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)),
+    //     url("../images/hero-mob.jpg");
     background-position: center top;
     background-repeat: no-repeat;
 
@@ -13,7 +13,7 @@
     background-size: cover;
 
 
-    @media screen and (min-width: 481px) {
+    @media screen and (max-width: 767.02px) {
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),

@@ -17,6 +17,10 @@
     color: var(--accant-color);
 }
 
+.contacts-nav__link--address {
+    color: var(--primary-white-color);
+}
+
 .address {
     margin-top: 20px;
 }
@@ -80,7 +84,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199.02px) {
     .footer__info,
     .footer__join {
-        width: 50%;
+        // width: 50%;
         margin-top: 0;
     }
     .form-block {
@@ -90,6 +94,7 @@
     .footer__container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         align-items: baseline;
     }
 }
